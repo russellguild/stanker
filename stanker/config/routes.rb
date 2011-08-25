@@ -1,4 +1,13 @@
 Stanker::Application.routes.draw do
+  resources :rankings
+
+  devise_for :users
+
+  devise_for :models
+  root :to => "home#index"
+
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
